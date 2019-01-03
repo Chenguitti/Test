@@ -7,10 +7,22 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   isAuth = false;
+  appareils = [
+    {
+      name: 'Machine à laver',
+      status: 'allumé'
+    },
+    {
+      name: 'Frigo',
+      status: 'allumé'
+    },
+    {
+      name: 'Ordinateur',
+      status: 'éteint'
+    }
+  ];
   
-  appareilOne = 'Machine à laver';
-  appareilTwo = 'Frigo';
-  appareilThree = 'Ordinateur';
+ 
   onAllumer() {
     console.log('On allume tout !');
 }
