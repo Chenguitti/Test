@@ -16,6 +16,17 @@ export class AppareilComponent implements OnInit {
   ngOnInit() {
   }
 
+  onAllume() {
+    
+    this.appareilStatus = "allumé";
+   
+}
+  onEteindr(){
+   
+    this.appareilStatus = "éteint";
+    
+  }
+
   getStatus() {
     return this.appareilStatus;
   }
