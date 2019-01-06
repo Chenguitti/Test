@@ -24,8 +24,16 @@ export class AppComponent {
   
  
   onAllumer() {
+    for(let appareil of this.appareils) {
+      appareil.status = 'allumé';
+    }
     console.log('On allume tout !');
 }
+  onEteindre(){
+    for(let appareil of this.appareils){
+      appareil.status = 'éteint';
+    }
+  }
   constructor() {
     setTimeout(
       () => {
