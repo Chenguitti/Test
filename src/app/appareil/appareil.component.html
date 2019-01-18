@@ -11,15 +11,15 @@
    *ngIf="appareilStatus =='allumé' "
 
    ></div>
-  <h4 [ngStyle] ="{color: getColor()}">Appareil : {{ appareilName }} -- Statut : {{getStatus()}} </h4>
+  <h4 [ngStyle] ="{color: getColor()}">Appareil : {{ appareilName }} -- Statut : {{getStatus()}}  </h4>
   <input type="text" class="form_control" [(ngModel)]="appareilName">
   <ul></ul>
   <button class="btn btn-success" 
   
-  (click)="onAllume()">allumer {{ appareilName }}</button>
+  (click)="onSwitchOn()">allumer {{ appareilName }}</button>
 <ul></ul>
 <ul></ul>
-<button class="btn btn-success" 
+<button class="btn btn-danger" 
   
-  (click)="onEteindr()">éteindre {{ appareilName }}</button>
+  (click)="onSwitchOff()">éteindre {{ appareilName }}</button>
 </li>
