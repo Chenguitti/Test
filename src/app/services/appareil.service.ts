@@ -1,4 +1,4 @@
-export class appareilService{
+export class AppareilService{
     appareils = [
         {
           name: 'Machine à laver',
@@ -24,4 +24,14 @@ export class appareilService{
             appareil.status = 'éteint';
         }
     }
+
+        switchOnOne(index: number){
+            this.appareils[index].status = 'allumé';
+
+        }
+
+        switchOffOne(index: number){
+            this.appareils[index].status = 'éteint';
+            
+        }
 }
