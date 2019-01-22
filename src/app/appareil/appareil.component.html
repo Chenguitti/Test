@@ -15,11 +15,11 @@
   <input type="text" class="form_control" [(ngModel)]="appareilName">
   <ul></ul>
   <button class="btn btn-success" 
-  
+  [disabled] ="appareilStatus ==='allumé'"
   (click)="onSwitchOn()">allumer {{ appareilName }}</button>
 <ul></ul>
 <ul></ul>
 <button class="btn btn-danger" 
-  
+[disabled] ="appareilStatus ==='éteint'"
   (click)="onSwitchOff()">éteindre {{ appareilName }}</button>
 </li>
